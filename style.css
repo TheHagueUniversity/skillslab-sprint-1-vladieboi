@@ -1,0 +1,339 @@
+
+/*------------------------------------*\
+  HOME
+\*------------------------------------*/
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+p {
+    font: 14px Helvetica, Sans-Serif; 
+    color: #F0F8FF;
+}
+
+
+ul,
+ul li {
+  list-style: none;
+}
+
+.header .navbar a {
+    display: block;
+    color: white;
+    font: bold 14px Helvetica, Sans-Serif; 
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.header a:hover:not(.active) {
+    /* navbar: */
+    background-image: linear-gradient(-180deg, rgba(238, 239, 239, 0.35) 90%, rgba(216, 216, 216, 0.20) 93%, rgba(216, 216, 216, 0.00) 96%);
+}
+
+.active {
+    background-image: linear-gradient(-180deg, rgba(133, 28, 53, 0.25) 90%, rgba(129, 12, 44, 0.20) 93%, rgba(129, 12, 44, 0.00) 96%);
+    text-decoration: underline;
+}
+
+#header {
+    height: auto;
+    width: 100%;
+    z-index: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    /* navbar: */
+
+    background-image: -webkit-linear-gradient(rgba(169, 172, 164, 0.25) 90%, rgba(216, 216, 216, 0.20) 93%, rgba(216, 216, 216, 0.00) 96%);
+    background-image: -o-linear-gradient(rgba(169, 172, 164, 0.25) 90%, rgba(216, 216, 216, 0.20) 93%, rgba(216, 216, 216, 0.00) 96%);
+    background-image: linear-gradient(rgba(169, 172, 164, 0.25) 90%, rgba(216, 216, 216, 0.20) 93%, rgba(216, 216, 216, 0.00) 96%);
+}
+
+.navbar a {
+  float: right;
+}
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -120px;
+    /* header gradient: */
+    background: url(images/bg-img.jpg);
+    /* Image is centered vertically and horizontally at all times */
+
+    background-position: center center;
+    /* Image doesn't repeat */
+
+    background-repeat: no-repeat;
+    /* Makes the image fixed in the viewport so that it doesn't move when
+     the content height is greater than the image height */
+
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based on its container's size */
+
+    background-size: cover;
+    /* Pick a solid background color that will be displayed while the background image is loading */
+
+    background-color: #464646;
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+}
+
+.footer,
+.wrapper:after {
+    height: 120px;
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+}
+
+.footer {
+    background-image: -webkit-linear-gradient(#222222 13%, #151515 94%);
+    background-image: -o-linear-gradient(#222222 13%, #151515 94%);
+    background-image: linear-gradient(#222222 13%, #151515 94%);
+    box-shadow: 0px 2px 4px 0px rgba(180,180,180,0.50), inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+}
+
+.copyright {
+  display: block;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+  text-align: right;
+  font:  10px Helvetica, Sans-Serif; 
+  color: #F0F8FF;
+}
+
+.footer-container {
+  display: block;
+  float: right;
+}
+
+.footer-container ul {
+  display: block;
+  margin-right: 16px;
+}
+
+.footer-container ul li {
+  display: inline-block;
+  float: none;
+}
+
+.footer-container small {
+  display: block;
+  margin-top: 10px;
+  padding-right: 16px;
+}
+
+.social {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+}
+
+.footer-container ul li:last-child .social {
+  margin: 0 0 0 10px;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 525px;
+    left: 0;
+    width: 100%;
+    
+}
+
+.title span {
+   color: white; 
+   font: bold 24px/45px Bebas, Helvetica, Sans-Serif; 
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 8px; 
+   letter-spacing: 2px
+}
+
+small {
+    color: white;
+    font-size: 12px;
+}
+
+span.spacer {
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.0);
+}
+/*------------------------------------*\
+  ABOUT
+\*------------------------------------*/
+.about-container {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 70vw;
+    max-width: 680px;
+    height: auto;
+    min-height: 40vh;
+    margin: auto;
+    padding-bottom: 30px;
+    background: rgba(34, 34, 34, 0.85);
+}
+
+.avatar {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 0;
+    border-radius: 50%;
+}
+
+.about-container p {
+    display: block;
+    padding: 20px 40px 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #EFEFEF;
+}
+
+.about-me {
+    display: block;
+    font: bold 28px Helvetica, Sans-Serif;
+    color: #F0F8FF;
+    padding: 20px 20px 0;
+    margin: 0 50px 0;
+}
+
+.video {
+  padding: 20px 142.5px 5px;
+}
+
+/*------------------------------------*\
+  CONTACT
+\*------------------------------------*/
+.contact-container {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 70vw;
+    max-width: 680px;
+    min-width: 350px;
+    height: auto;
+    min-height: 40vh;
+    margin: auto;
+    padding-bottom: 30px;
+    background: rgba(34, 34, 34, 0.85);
+}
+
+.contact-container h1 span {
+   font: bold 28px Helvetica, Sans-Serif; 
+   color: #F0F8FF;
+}
+
+.contentContact {
+  display: ;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.contentContact p {
+  display: block;
+  margin-top: 10px;
+  color: #FFF;
+}
+
+.contactMe {
+  display: block;
+  margin-top: 20px;
+}
+
+.contactMe input,
+.contactMe textarea {
+  display: block;
+  margin: 10px auto;
+}
+
+.contact-me {
+  display: block;
+  font: 14px Helvetica, Sans-Serif; 
+  color: #F0F8FF;  margin: 30px 0;
+}
+
+.contact-me a {
+  color: #FFFFFF;
+}
+
+textarea {
+  resize: none;
+  width: 300px;
+  height: 50px;
+}
+/*------------------------------------*\
+  PORTFOLIO
+\*------------------------------------*/
+
+.portfolio-container {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    left: 0;
+    display: flex;
+    width: 70vw;
+    max-width: 680px;
+    min-width: 350px;
+    height: auto;
+    min-height: 40vh;
+    margin: auto;
+    padding-bottom: 30px;
+    background: rgba(34, 34, 34, 0.85);
+}
+
+.category1 {
+    position: relative;
+    right: 16px;
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin: 20px auto 10px;
+    border-radius: 2%;
+}
+
+.rig-img {
+    width:100%
+}
+
+.rig-text {
+    font: bold 14px Helvetica, Sans-Serif; 
+    color: #F0F8FF;
+    display: block;
+    margin-left: 15px;
+}
