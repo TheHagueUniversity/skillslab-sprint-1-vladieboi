@@ -231,7 +231,10 @@ span.spacer {
 }
 
 .video {
-  padding: 20px 142.5px 5px;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    top: 15px;
 }
 
 /*------------------------------------*\
